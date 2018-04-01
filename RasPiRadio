@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while [ true ]
+
+do
+
+pidof  StartRadio >/dev/null
+
+if [[ $? -ne 0 ]] ; then
+   /home/pi/Devel/PiRadio/./StartRadio
+fi
+
+done
