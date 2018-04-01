@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR="/home/pi/Music"
+
+IFS='
+'
+
+if [[ -d "${DIR}" ]]
+then
+  file_matrix=($(ls "${DIR}"))
+  num_files=${#file_matrix[*]}
+  file="${DIR}/${file_matrix[$((RANDOM%num_files))]}"
+fi
+
+
+sox $file -t wav - | sudo /home/pi/Devel/PiRadio/./pi_fm_rds -freq 87.9 -rt 'RasPiRadio' -audio -
