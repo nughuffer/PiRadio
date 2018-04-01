@@ -1,0 +1,9 @@
+[Unit]
+Description=PiRadio Startup Script
+
+[Service]
+Type=simple
+ExecStart=/home/pi/Devel/PiRadio/./RasPiRadio
+
+[Install]
+WantedBy=multi-user.target
