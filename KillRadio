@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo pkill RasPiRadio
+sudo pkill pi_fm_rds
+sudo pkill StartRadio
