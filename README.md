@@ -13,6 +13,9 @@ $sudo systemctl enable piradio
 
 to have it start after boot up. 
 
-Needs sox and this program installed to work: 
+Needs sox, libsox-fmt-mp3, and this program installed to work: 
 
 https://github.com/ChristopheJacquet/PiFmRds
+
+I've precompiled it since there's an issue with libsndfile1-dev.
+
