@@ -17,6 +17,3 @@ Needs sox, libsox-fmt-mp3, and this program installed to work:
 
 https://github.com/ChristopheJacquet/PiFmRds
 
-I've precompiled it since there's an issue with libsndfile1-dev.
-
-Executable currently not working. 
